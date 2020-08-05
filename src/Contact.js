@@ -16,7 +16,7 @@ export default class Contact extends Component {
         </div>
         <div id='contact-form-container'>
 
-          <form id='contact-form' action="https://formspree.io/xknqpjya" method="POST"></form>
+          <form id='contact-form' action="https://formspree.io/xknqpjya" method="POST">
 
             <fieldset id='form-fieldset'>
 
@@ -37,6 +37,8 @@ export default class Contact extends Component {
               </div>
 
             </fieldset>
+
+          </form>
         </div>
       </div>
 		)

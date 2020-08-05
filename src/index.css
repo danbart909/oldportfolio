@@ -594,25 +594,32 @@ img {
   justify-content: space-evenly;
 }
 
-#contact-form-container {
+/* #contact-form-container {
   display: flex;
   justify-content: center;
   align-items: center;
+} */
+
+#contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 #form-fieldset {
-  height: 95%;
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   border: 1px solid whitesmoke;
-  padding: 40px 0 30px 0;
+  padding: 40px 0 30px 13%;
 }
 
 #nameinput, #emailinput {
-  width: 80%;
+  width: 85%;
   height: calc(30px + 10 * ((100vw - 400px) / 1200));
   margin: 0 0 15px 0;
   padding: 10px;
@@ -620,8 +627,9 @@ img {
 }
 
 #textarea {
-  width: 80%;
+  width: 85%;
   height: calc(160px + 120 * ((100vw - 400px) / 1200));
+  margin: 0 0 0 0;
 }
 
 #maininput {
@@ -635,7 +643,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 85%;
   height: 40px;
   margin: 35px 0 10px 0;
   border: none;
@@ -655,4 +663,19 @@ img {
 #submit {
   width: 100%;
   height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+@-moz-document url-prefix() {
+  #form-fieldset {
+    padding: 40px 0 30px 0;
+  }
 }
