@@ -76,7 +76,23 @@ a, a:visited {
   }
 }
 
+@keyframes fadeIn {
+  100% {
+    opacity: 100%;
+  }
+}
 
+@keyframes popIn {
+  0% {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 
 
 
@@ -104,7 +120,7 @@ a, a:visited {
 /* ////////////////////////////////////////////// App  */
 
 #main-container {
-  /* height: 800px; */
+  height: 100vh;
   width: 70%;
   display: flex;
   justify-content: center;
@@ -187,6 +203,11 @@ a, a:visited {
   align-items: center;
   text-decoration: none;
   transition: 0.7s;
+  /* transform: scale(0); */
+  /* animation: 2s ease-out 0s 1 popIn forwards; */
+}
+
+.nav-button a {
 }
 
 .nav-button:visited {
@@ -228,9 +249,11 @@ a, a:visited {
   display: flex;
   flex-direction: column;
   height: 100%;
+  overflow: hidden;
 }
 
 #bio-header {
+  overflow: hidden;
   animation: 2s ease-out 0s 1 slideInFromRight;
   height: 50%;
   display: flex;
@@ -240,10 +263,13 @@ a, a:visited {
 }
 
 #bio-content {
-  animation: 2s ease-out 0s 1 slideInFromDown;
+  animation:
+    2s ease-out 0s 1 slideInFromDown,
+    2s ease-out 0s 1 fadeIn forwards;
   height: 50%;
   display: flex;
   padding: 0 20px;
+  opacity: 0;
 }
 
 
@@ -312,6 +338,7 @@ a, a:visited {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  text-align: center;
   /* padding: 20px 0; */
   /* margin: 10px 0; */
   /* outline: 1px solid white; */
