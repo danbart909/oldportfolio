@@ -78,7 +78,7 @@ a, a:visited {
 
 @keyframes fadeIn {
   100% {
-    opacity: 100%;
+    opacity: 1;
   }
 }
 
@@ -269,7 +269,7 @@ a, a:visited {
   height: 50%;
   display: flex;
   padding: 0 20px;
-  opacity: 1;
+  opacity: 0;
 }
 
 
