@@ -13,13 +13,17 @@ export default class Project4 extends Component {
               <a href="https://danbart909.github.io/USCensusApp/" className='live-link' target="_blank">
                 <i className="icon live-i fas fa-globe" role="link" />
               </a>
+              <a href="https://danbart909.github.io/USCensusApp/" className='live-link' target="_blank">
                 <span className="live-span">Live</span>
+              </a>
             </div>
             <div id='project4-links-client' className='project-links-client'>
 						  <a href="https://github.com/danbart909/USCensusApp" className='client-link' target="_blank">
                 <i className="icon github-i fab fa-github" role="link" />
               </a>
-              <span className="github-span-client">Client Repo</span>
+              <a href="https://github.com/danbart909/USCensusApp" className='client-link' target="_blank">
+                <span className="github-span-client">Client Repo</span>
+              </a>
             </div>
           </div>
         </div>
