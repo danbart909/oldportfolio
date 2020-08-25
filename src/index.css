@@ -26,8 +26,9 @@ html {
   display: flex;
   font-size: calc(13px + 8 * ((100vw - 400px) / 1200));
   min-width: 400px;
-  min-height: 950px;
+  min-height: 100vh;
   font-family: 'Varta', sans-serif;
+  overflow: hidden;
 }
 
 a, a:visited {
@@ -125,12 +126,12 @@ a, a:visited {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
 }
 
 #nav-container {
   width: 30%;
   display: flex;
+  height: 100vh;
 }
 
 
@@ -268,7 +269,13 @@ a, a:visited {
     2s ease-out 0s 1 fadeIn forwards;
   height: 50%;
   display: flex;
+  flex-direction: column;
   padding: 0 20px;
+  opacity: 0;
+}
+
+#bio-content p {
+  animation: 2s ease-out 2.5s 1 fadeIn forwards;
   opacity: 0;
 }
 
@@ -327,11 +334,12 @@ a, a:visited {
   justify-content: center;
   align-items: center;
   width: 90%;
-  border: 1px solid whitesmoke;
+  height: 85%;
 }
 
 .project-tabs {
-  /* height: 100%; */
+  height: 100%;
+  border: 1px solid whitesmoke;
 }
 
 #tab-labels {
@@ -339,13 +347,11 @@ a, a:visited {
   align-items: center;
   justify-content: space-around;
   text-align: center;
-  /* padding: 20px 0; */
-  /* margin: 10px 0; */
-  /* outline: 1px solid white; */
+  height: 8%;
 }
 
 .tab-link {
-  height: 60px;
+  height: 100%;
   width: 25%;
   overflow: hidden;
   font-size: calc(11px + 6 * ((100vw - 400px) / 1200));
@@ -357,6 +363,7 @@ a, a:visited {
   background-color: whitesmoke;
   color: black;
   transition: 0.7s;
+  line-height: 1.4;
 }
 
 .tab-link:hover {
@@ -368,23 +375,28 @@ a, a:visited {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 92%;
 }
 
 .project {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
   font-size: calc(14px + 6 * ((100vw - 400px) / 1200));
-  /* width: 90%; */
+  height: 78vh;
+}
+
+.tophalf {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .project-top {
   display: flex;
   width: 100%;
-  /* height: 40px; */
-  /* border: 5px solid white; */
-  margin: 10px 0 0 0;
+  height: 25%;
+  margin: 50px 0 0 0;
 }
 
 .project-title {
@@ -401,12 +413,11 @@ a, a:visited {
 .project-links {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: space-evenly;
   width: 20%;
   overflow: hidden;
   padding: 10px;
-  font-size: calc(12px + 2 * ((100vw - 400px) / 1200));
+  font-size: calc(10px + 4 * ((100vw - 400px) / 1200));
   line-height: 1.5;
 }
 
@@ -450,10 +461,7 @@ a, a:visited {
   justify-content: center;
   align-items: center;
   width: 100%;
-  /* height: 20%; */
-  margin: 10px;
-  border-top: 1px solid whitesmoke;
-  border-bottom: 1px solid whitesmoke;
+  height: 75%;
 }
 
 .project-description {
@@ -472,7 +480,7 @@ a, a:visited {
   text-align: center;
   width: 20%;
   overflow: hidden;
-  font-size: calc(12px + 6 * ((100vw - 400px) / 1200));
+  font-size: calc(10px + 6 * ((100vw - 400px) / 1200));
   line-height: 1.4;
   padding: 10px;
   border-left: 1px solid whitesmoke;
@@ -487,12 +495,11 @@ a, a:visited {
   display: flex;
   justify-content: center;
   align-self: center;
-  /* width: 100%; */
-  /* height: 60%; */
+  height: 50%;
 }
 
 .project-img {
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -505,7 +512,9 @@ a, a:visited {
 }
 
 img {
-  width: 80%;
+  justify-self: flex-start;
+  max-width: 95%;
+  max-height: 300px;
 }
 
 
@@ -571,7 +580,7 @@ img {
   height: 95vh;
   display: flex;
   flex-direction: column;
-  margin: 0 0 30px 0;
+  margin: 0 0 80px 0;
 }
 
 #contact-button-header-container {
