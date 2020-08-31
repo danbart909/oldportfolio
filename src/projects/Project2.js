@@ -23,7 +23,7 @@ export default class Project2 extends Component {
                   <i className="icon github-i fab fa-github" role="link" />
                 </a>
                 <a href="https://github.com/OmarMutd/TBM-Client" className='client-link' target="_blank">
-                  <span className="github-span-client">Client Repo</span>
+                  <span className="github-span-client">Client</span>
                 </a>
               </div>
               <div id='project2-links-server' className='project-links-server'>
@@ -31,7 +31,7 @@ export default class Project2 extends Component {
                   <i className="icon github2-i fab fa-github-square" role="link" />
                 </a>
                 <a href="https://github.com/danbart909/TBM-Server" target="_blank" className="server-link">
-                  <span className="github-span-server">Server Repo</span>
+                  <span className="github-span-server">Server</span>
                 </a>
               </div>
             </div>

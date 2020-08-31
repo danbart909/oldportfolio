@@ -4,6 +4,7 @@ import Project1 from './projects/Project1'
 import Project2 from './projects/Project2'
 import Project3 from './projects/Project3'
 import Project4 from './projects/Project4'
+import Project5 from './projects/Project5'
 export default class Projects extends Component {
 
 	render() {
@@ -23,6 +24,7 @@ export default class Projects extends Component {
             <TabLink component='div' className='tab-link' to='tab2'>The Black Market</TabLink>
             <TabLink component='div' className='tab-link' to='tab3'>Thinkful Forum</TabLink>
             <TabLink component='div' className='tab-link' to='tab4'>US Census App</TabLink>
+            <TabLink component='div' className='tab-link' to='tab5'>Turtle Racing</TabLink>
           </div>
           <div id='tab-content'>
             <TabContent for='tab1'>
@@ -36,6 +38,9 @@ export default class Projects extends Component {
             </TabContent>
             <TabContent for='tab4'>
               <Project4 />
+            </TabContent>
+            <TabContent for='tab5'>
+              <Project5 />
             </TabContent>
           </div>
         </Tabs>
