@@ -41,7 +41,7 @@ export default class Project4 extends Component {
         <div id='project5-bot' className='project-bot'>
           <div id='project5-img' className='project-img'>
           <a href="https://turtle-racing.vercel.app/" className='img-link' target="_blank">
-            <img src='https://i.imgur.com/qpN717d.jpg' alt='Screenshot of Turtle Racing'/>
+            <img src='https://i.imgur.com/lwoQkNM.jpg' alt='Screenshot of Turtle Racing'/>
           </a>
           </div>
         </div>
