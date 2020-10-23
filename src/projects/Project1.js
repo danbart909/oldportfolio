@@ -11,10 +11,10 @@ export default class Project1 extends Component {
             </div>
             <div id='project1-links' className='project-links'>
               <div id='project1-links-live' className='project-links-live'>
-                <a href="http://prettygoodinc.com" className='live-link' target="_blank">
+                <a href="http://happywifejunk.com" className='live-link' target="_blank">
                   <i className="icon live-i fas fa-globe" role="link" />
                 </a>
-                <a href="http://prettygoodinc.com" className='live-link' target="_blank">
+                <a href="http://happywifejunk.com" className='live-link' target="_blank">
                   <span className="live-span">Live</span>
                 </a>
               </div>
@@ -40,7 +40,7 @@ export default class Project1 extends Component {
         </div>
         <div id='project1-bot' className='project-bot'>
           <div id='project1-img' className='project-img'>
-            <a href="http://prettygoodinc.com" className='img-link' target="_blank">
+            <a href="http://happywifejunk.com" className='img-link' target="_blank">
               <img src='https://i.imgur.com/EwMM91j.jpg' alt='Screenshot of Happy Wife Junk Service Homepage'/>
             </a>
           </div>
