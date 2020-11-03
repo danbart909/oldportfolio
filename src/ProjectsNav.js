@@ -6,10 +6,10 @@ export default class ProjectsNav extends Component {
     return (
       <div id='projects-nav-container' className='nav'>
         <div className='nav-top'>
-          <Link to="/" className='nav-button nav-top-button nav-bio' aria-role="button">Home</Link>
+          <Link to="/" className='nav-button nav-top-button nav-bio nav-home-projects' aria-role="button">Home</Link>
         </div>
         <div className='nav-bottom'>
-          <Link to="/contact" className='nav-button nav-bottom-button nav-contact' aria-role="button">Contact</Link>
+          <Link to="/contact" className='nav-button nav-bottom-button nav-contact nav-home-projects' aria-role="button">Contact</Link>
         </div>
       </div>
     )

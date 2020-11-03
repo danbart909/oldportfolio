@@ -17,14 +17,14 @@ html {
   display: none;
 }
 
-#root {
+/* #root {
   background-color: black;
   color: whitesmoke;
-}
+} */
 
 #overlord {
   display: flex;
-  font-size: calc(13px + 8 * ((100vw - 400px) / 1200));
+  font-size: calc(15px + 8 * ((100vw - 400px) / 1200));
   min-width: 400px;
   min-height: 100vh;
   font-family: 'Varta', sans-serif;
@@ -46,8 +46,8 @@ a, a:visited {
   bottom: 100%;
   left: 50%;
   margin-left: -75px;
-  background-color: black;
-  color: #fff;
+  background-color: whitesmoke;
+  color: black;
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
@@ -95,6 +95,15 @@ a, a:visited {
   }
 }
 
+@keyframes backgroundFadeIn {
+  0% {
+    background-color: rgb(0, 0, 0, .0)
+  }
+  100% {
+    background-color: rgb(0, 0, 0, .6)
+  }
+}
+
 
 
 
@@ -121,6 +130,7 @@ a, a:visited {
 /* ////////////////////////////////////////////// App  */
 
 #main-container {
+  /* background: transparent; */
   height: 100vh;
   width: 70%;
   display: flex;
@@ -129,6 +139,7 @@ a, a:visited {
 }
 
 #nav-container {
+  /* background: transparent; */
   width: 30%;
   display: flex;
   height: 100vh;
@@ -198,7 +209,8 @@ a, a:visited {
 
 .nav-button {
   outline: 1px solid pink;
-  font-size: calc(22px + (18) * ((100vw - 400px) / 1200));
+  background-color: rgb(0, 0, 0, 0.2);
+  font-size: calc(26px + (18) * ((100vw - 400px) / 1200));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -208,16 +220,43 @@ a, a:visited {
   /* animation: 2s ease-out 0s 1 popIn forwards; */
 }
 
-.nav-button a {
-}
-
-.nav-button:visited {
+.nav-home-bio a {
   color: whitesmoke;
 }
 
-.nav-button:hover {
-  background-color: whitesmoke;
+.nav-home-bio:visited {
+  color: whitesmoke;
+}
+
+.nav-home-bio:hover {
+  background-color: black;
+  color: whitesmoke;
+}
+
+.nav-home-projects a {
+  color: whitesmoke;
+}
+
+.nav-home-projects:visited {
+  color: whitesmoke;
+}
+
+.nav-home-projects:hover {
+  background-color: black;
+  color: whitesmoke;
+}
+
+.nav-home-contact a {
   color: black;
+}
+
+.nav-home-contact:visited {
+  color: black;
+}
+
+.nav-home-contact:hover {
+  background-color: black;
+  color: whitesmoke;
 }
 
 
@@ -251,6 +290,7 @@ a, a:visited {
   flex-direction: column;
   height: 100%;
   overflow: hidden;
+  color: whitesmoke;
 }
 
 #bio-header {
@@ -263,6 +303,14 @@ a, a:visited {
   padding: 0 20px;
 }
 
+#bio-header span {
+  animation: 2s ease-out 2s 1 backgroundFadeIn forwards;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 100%;
+  padding: 4% 3% 0 3%;
+}
+
 #bio-content {
   animation:
     2s ease-out 0s 1 slideInFromDown forwards,
@@ -271,7 +319,16 @@ a, a:visited {
   display: flex;
   flex-direction: column;
   padding: 0 20px;
-  opacity: 0;
+  line-height: 1.3;
+  /* opacity: 0; */
+}
+
+#bio-content span {
+  animation: 2s ease-out 2s 1 backgroundFadeIn forwards;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 100%;
+  padding: 0% 3% 4% 3%;
 }
 
 #bio-content p {
@@ -384,6 +441,8 @@ a, a:visited {
   flex-direction: column;
   font-size: calc(14px + 6 * ((100vw - 400px) / 1200));
   height: 78vh;
+  background-color: rgb(0, 0, 0, 0.6);
+  color: whitesmoke;
 }
 
 .tophalf {
@@ -603,10 +662,10 @@ img {
   transition: 0.5s;
 }
 
-#contact-header:hover {
+/* #contact-header:hover {
   background-color: whitesmoke;
   color: black;
-}
+} */
 
 #contact-span-1 {
   margin: 0 0 3% 0;
@@ -620,6 +679,7 @@ img {
 
 .icon {
   transition: 0.8s;
+  color: black;
 }
 
 .icon:hover {
@@ -653,7 +713,7 @@ img {
   justify-content: center;
   align-items: center;
   border: 1px solid transparent;
-  padding: 40px 0 30px 13%;
+  padding: 40px 0 30px 0;
 }
 
 #nameinput, #emailinput {
@@ -684,13 +744,15 @@ img {
   width: 85%;
   height: 40px;
   margin: 35px 0 10px 0;
-  border: none;
 }
 
 #submit {
   background-color: whitesmoke;
   color: black;
   transition: 0.7s;
+  border: none;
+  width: 100%;
+  height: 100%;
 }
 
 #submit:hover {
@@ -698,10 +760,7 @@ img {
   color: whitesmoke;
 }
 
-#submit {
-  width: 100%;
-  height: 100%;
-}
+
 
 
 

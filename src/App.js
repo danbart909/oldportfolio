@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Route, Switch, Link } from 'react-router-dom'
+import ParticlesBg from 'particles-bg'
 import Bio from './Bio'
 import Projects from './Projects'
 import Contact from './Contact'
