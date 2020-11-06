@@ -16,7 +16,6 @@ export default class Contact extends Component {
   componentDidMount(){
     PowerModeInput.make(document.querySelector('#nameinput'));
     PowerModeInput.make(document.querySelector('#emailinput'));
-    PowerModeInput.make(document.querySelector('#maininput'));
   }
 
   setName = (e) => {
@@ -41,8 +40,8 @@ export default class Contact extends Component {
               <span id='contact-span-2'>You could also use the form below to send me an email directly.</span>
             </div>
             <div id='contact-buttons'>
-              <a href="https://www.linkedin.com/in/d-bartlett/" target="_blank"><i className="icon fab fa-linkedin fa-2x" id="linkedin-i" role="link" /></a>
-              <a href="https://github.com/danbart909" target="_blank"><i className="icon fab fa-github fa-2x" id="github-i" role="link" /></a>
+              <a href="https://www.linkedin.com/in/d-bartlett/" target="_blank"><i className="icon2 fab fa-linkedin fa-2x" id="linkedin-i" role="link" /></a>
+              <a href="https://github.com/danbart909" target="_blank"><i className="icon2 fab fa-github fa-2x" id="github-i" role="link" /></a>
             </div>
           </div>
           <div id='contact-form-container'>

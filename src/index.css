@@ -1,5 +1,8 @@
 /* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -208,6 +211,7 @@ a, a:visited {
 }
 
 .nav-button {
+  font-family: 'Source Sans Pro', sans-serif;
   outline: 1px solid pink;
   background-color: rgb(0, 0, 0, 0.2);
   font-size: calc(26px + (18) * ((100vw - 400px) / 1200));
@@ -460,6 +464,7 @@ a, a:visited {
 }
 
 .project-title {
+  font-family: 'Montserrat', sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -679,10 +684,19 @@ img {
 
 .icon {
   transition: 0.8s;
-  color: black;
+  color: white;
 }
 
 .icon:hover {
+  transform: scale(1.6);
+}
+
+.icon2 {
+  transition: 0.8s;
+  color: black;
+}
+
+.icon2:hover {
   transform: scale(1.6);
 }
 
@@ -742,8 +756,8 @@ img {
   justify-content: center;
   align-items: center;
   width: 85%;
-  height: 40px;
-  margin: 35px 0 10px 0;
+  height: 45px;
+  margin: 30px 0 10px 0;
 }
 
 #submit {
@@ -758,6 +772,10 @@ img {
 #submit:hover {
   background-color: black;
   color: whitesmoke;
+}
+
+#submit:only-child {
+  padding: 7px 0 0 0;
 }
 
 
