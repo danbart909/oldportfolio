@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import img from '../img/blackmarketpreview.jpg'
 
-export default class Project2 extends Component {
+export default class Blackmarket extends Component {
   render() {
     return (
       <div id='project2' className='project'>

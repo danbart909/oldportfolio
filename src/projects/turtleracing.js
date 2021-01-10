@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import img from '../img/turtleracingpreview.jpg'
 
-export default class Project4 extends Component {
+export default class TurtleRacing extends Component {
   render() {
     return (
       <div id='project5' className='project'>

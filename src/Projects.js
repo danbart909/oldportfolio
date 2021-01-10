@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import { Tabs, TabLink, TabContent } from 'react-tabs-redux'
 import ParticlesBg from 'particles-bg'
-import Project1 from './projects/Project1'
-import Project2 from './projects/Project2'
-import Project3 from './projects/Project3'
-import Project4 from './projects/Project4'
-import Project5 from './projects/Project5'
+import Happywife from './projects/happywife'
+import Blackmarket from './projects/blackmarket'
+import Forum from './projects/forum'
+import Census from './projects/census'
+import TurtleRacing from './projects/turtleracing'
 
 export default class Projects extends Component {
 
@@ -24,26 +24,26 @@ export default class Projects extends Component {
           <Tabs className='project-tabs' activeLinkStyle={activeStyle}>
             <div id='tab-labels'>
               <TabLink component='div' className='tab-link' to='tab1'>Happy Wife Junk Service</TabLink>
-              <TabLink component='div' className='tab-link' to='tab2'>The Black Market</TabLink>
-              <TabLink component='div' className='tab-link' to='tab3'>Thinkful Forum</TabLink>
-              <TabLink component='div' className='tab-link' to='tab4'>US Census App</TabLink>
-              <TabLink component='div' className='tab-link' to='tab5'>Turtle Racing</TabLink>
+              <TabLink component='div' className='tab-link' to='tab2'>Turtle Racing</TabLink>
+              <TabLink component='div' className='tab-link' to='tab3'>US Census App</TabLink>
+              <TabLink component='div' className='tab-link' to='tab4'>The Black Market</TabLink>
+              <TabLink component='div' className='tab-link' to='tab5'>Thinkful Forum</TabLink>
             </div>
             <div id='tab-content'>
               <TabContent for='tab1'>
-                <Project1 />
+                <Happywife />
               </TabContent>
               <TabContent for='tab2'>
-                <Project2 />
+                <TurtleRacing />
               </TabContent>
               <TabContent for='tab3'>
-                <Project3 />
+                <Census />
               </TabContent>
               <TabContent for='tab4'>
-                <Project4 />
+                <Blackmarket />
               </TabContent>
               <TabContent for='tab5'>
-                <Project5 />
+                <Forum />
               </TabContent>
             </div>
           </Tabs>
