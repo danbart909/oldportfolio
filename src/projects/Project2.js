@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import img from '../img/blackmarketpreview.jpg'
 
 export default class Project2 extends Component {
   render() {
@@ -49,7 +50,7 @@ export default class Project2 extends Component {
         <div id='project2-bot' className='project-bot'>
           <div id='project2-img' className='project-img'>
             <a href="https://tbm-client.now.sh/" className='img-link' target="_blank">
-              <img src='https://i.imgur.com/n9fpUHc.jpg' alt='Screenshot of The Black Market Homepage'/>
+              <img src={img} alt='Screenshot of The Black Market Homepage'/>
             </a>
           </div>
         </div>

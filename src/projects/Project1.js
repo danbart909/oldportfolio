@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import img from '../img/happywifepreview.jpg'
 
 export default class Project1 extends Component {
   render() {
@@ -41,7 +42,7 @@ export default class Project1 extends Component {
         <div id='project1-bot' className='project-bot'>
           <div id='project1-img' className='project-img'>
             <a href="http://happywifejunk.com" className='img-link' target="_blank">
-              <img src='https://i.imgur.com/EwMM91j.jpg' alt='Screenshot of Happy Wife Junk Service Homepage'/>
+              <img src={img} alt='Screenshot of Happy Wife Junk Service Homepage'/>
             </a>
           </div>
         </div>

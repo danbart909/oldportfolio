@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import img from '../img/uscensusapppreview.jpg'
 
 export default class Project4 extends Component {
   render() {
@@ -11,10 +12,10 @@ export default class Project4 extends Component {
             </div>
             <div id='project4-links' className='project-links'>
               <div id='project4-links-live' className='project-links-live'>
-                <a href="https://danbart909.github.io/USCensusApp/" className='live-link' target="_blank">
+                <a href="https://uscensusapp.vercel.app/" className='live-link' target="_blank">
                   <i className="icon live-i fas fa-globe" role="link" />
                 </a>
-                <a href="https://danbart909.github.io/USCensusApp/" className='live-link' target="_blank">
+                <a href="https://uscensusapp.vercel.app/" className='live-link' target="_blank">
                   <span className="live-span">Live</span>
                 </a>
               </div>
@@ -40,8 +41,8 @@ export default class Project4 extends Component {
         </div>
         <div id='project4-bot' className='project-bot'>
           <div id='project4-img' className='project-img'>
-          <a href="https://danbart909.github.io/USCensusApp/" className='img-link' target="_blank">
-            <img src='https://i.imgur.com/OT9CXx8.jpg' alt='Screenshot of US Census App'/>
+          <a href="https://uscensusapp.vercel.app/" className='img-link' target="_blank">
+            <img src={img} alt='Screenshot of US Census App'/>
           </a>
           </div>
         </div>

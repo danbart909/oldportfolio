@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import img from '../img/forumpreview.jpg'
 
 export default class Project3 extends Component {
   render() {
@@ -49,7 +50,7 @@ export default class Project3 extends Component {
         <div id='project3-bot' className='project-bot'>
           <div id='project3-img' className='project-img'>
             <a href="https://forum-client-delta.now.sh/" className='img-link' target="_blank">
-              <img src='https://i.imgur.com/sfe0v83.jpg' alt='Screenshot of the Thinkful Forum'/>
+              <img src={img} alt='Screenshot of the Thinkful Forum'/>
             </a>
           </div>
         </div>
