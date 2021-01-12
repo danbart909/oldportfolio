@@ -35,7 +35,7 @@ export default class Happywife extends Component {
             </div>
             <div id='project1-tech' className='project-tech'>
               <span className='project-tech-header'>Technologies:</span>
-              <span>HTML, CSS, JavaScript, React</span>
+              <span>HTML, CSS, JavaScript, jQuery, React</span>
             </div>
           </div>
         </div>

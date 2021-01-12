@@ -35,7 +35,7 @@ export default class TurtleRacing extends Component {
             </div>
             <div id='project5-tech' className='project-tech'>
               <span>Technologies:</span>
-              <span>HTML, CSS, Javascript, jQuery, React</span>
+              <span>HTML, CSS, JavaScript, jQuery, React</span>
             </div>
           </div>
         </div>

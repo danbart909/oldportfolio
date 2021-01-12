@@ -35,7 +35,7 @@ export default class Census extends Component {
             </div>
             <div id='project4-tech' className='project-tech'>
               <span>Technologies:</span>
-              <span>HTML, CSS, Javascript, jQuery</span>
+              <span>HTML, CSS, JavaScript, jQuery, React</span>
             </div>
           </div>
         </div>
