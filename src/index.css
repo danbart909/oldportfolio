@@ -253,7 +253,6 @@ a, a:visited {
   height: 100%;
   overflow: hidden;
   color: whitesmoke;
-  outline: 1px solid white;
 
 }
 
@@ -262,7 +261,6 @@ a, a:visited {
 }
 
 #bio-header {
-  outline: 1px solid white;
   overflow: hidden;
   animation: 2s ease-out 0s 1 slideInFromRight;
   height: 100%;
@@ -285,7 +283,6 @@ a, a:visited {
 }
 
 #bio-content {
-  outline: 1px solid white;
   animation:
     2s ease-out 0s 1 slideInFromDown forwards,
     2s ease-out 0s 1 fadeIn forwards;
@@ -306,7 +303,6 @@ a, a:visited {
 }
 
 #bio-footer {
-  outline: 1px solid white;
   height: 40%;
   padding: 0 20px;
   line-height: 1.3;
