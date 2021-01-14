@@ -4,9 +4,11 @@ import ParticlesBg from 'particles-bg'
 import Bio from './Bio'
 import Projects from './Projects'
 import Contact from './Contact'
+import Resources from './Resources'
 import BioNav from './BioNav'
 import ProjectsNav from './ProjectsNav'
 import ContactNav from './ContactNav'
+import ResourcesNav from './ResourcesNav'
 
 export default class App extends Component {
   render() {
@@ -24,6 +26,9 @@ export default class App extends Component {
               <Route
                 exact path='/contact' component={Contact}
               />
+              <Route
+                exact path='/resources' component={Resources}
+              />
             </Switch>
           </div>
           <div id='nav-container'>
@@ -36,6 +41,9 @@ export default class App extends Component {
               />
               <Route
                 exact path='/contact' component={ContactNav}
+              />
+              <Route
+                exact path='/resources' component={ResourcesNav}
               />
             </Switch>
           </div>

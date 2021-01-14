@@ -1,7 +1,6 @@
 /* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Sans+Pro&family=Rubik&display=swap');
 
 * {
   box-sizing: border-box;
@@ -111,13 +110,9 @@ a, a:visited {
 
 
 
-
-/*/////////////////////////////////////////////*/
-/*/////////////////////////////////////////////*/
-/*//////////////////// App ////////////////////*/
-/*/////////////////////////////////////////////*/
-/*/////////////////////////////////////////////*/
-
+/*********************************************/
+/******************** App ********************/
+/*********************************************/
 
 
 #main-container {
@@ -140,14 +135,9 @@ a, a:visited {
 
 
 
-
-
-/*/////////////////////////////////////////////*/
-/*/////////////////////////////////////////////*/
-/*//////////////////// Nav ////////////////////*/
-/*/////////////////////////////////////////////*/
-/*/////////////////////////////////////////////*/
-
+/*********************************************/
+/******************** Nav ********************/
+/*********************************************/
 
 
 .nav {
@@ -155,20 +145,34 @@ a, a:visited {
 }
 
 .nav-top {
-  height: 50%;
+  height: 33.3%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
 }
 
+.nav-middle {
+  height: 33.3%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 6vh 0 0 0;
+}
+
 .nav-bottom {
-  height: 50%;
+  height: 33.3%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
 }
 
 .nav-top-button {
+  width: 65%;
+  height: 8vw;
+  margin: 0 0 10% 10%;
+}
+
+.nav-middle-button {
   width: 65%;
   height: 8vw;
   margin: 0 0 10% 10%;
@@ -194,57 +198,39 @@ a, a:visited {
   /* animation: 2s ease-out 0s 1 popIn forwards; */
 }
 
-.nav-home-bio a {
+.nav-home-bio a,
+.nav-home-bio:visited,
+.nav-home-projects a,
+.nav-home-projects:visited,
+.nav-home-contact a,
+.nav-home-contact:visited,
+.nav-home-resources a,
+.nav-home-resources:visited {
   color: whitesmoke;
 }
 
-.nav-home-bio:visited {
-  color: whitesmoke;
-}
-
-.nav-home-bio:hover {
-  background-color: black;
-  color: whitesmoke;
-}
-
-.nav-home-projects a {
-  color: whitesmoke;
-}
-
-.nav-home-projects:visited {
-  color: whitesmoke;
-}
-
+.nav-home-bio:hover,
 .nav-home-projects:hover {
-  background-color: black;
-  color: whitesmoke;
+  background-color: rgb(0, 0, 0, .6);
 }
 
-.nav-home-contact a {
-  color: black;
+.nav-home-contact,
+.nav-home-resources {
+  background-color: rgb(0, 0, 0, .6);
 }
 
-.nav-home-contact:visited {
-  color: black;
-}
-
-.nav-home-contact:hover {
-  background-color: black;
-  color: whitesmoke;
+.nav-home-contact:hover,
+.nav-home-resources:hover {
+  background-color: rgb(0, 0, 0, .9);
 }
 
 
 
 
 
-
-
-/*/////////////////////////////////////////////*/
-/*/////////////////////////////////////////////*/
-/*//////////////////// Bio ////////////////////*/
-/*/////////////////////////////////////////////*/
-/*/////////////////////////////////////////////*/
-
+/*********************************************/
+/******************** Bio ********************/
+/*********************************************/
 
 
 #bio-container {
@@ -253,7 +239,6 @@ a, a:visited {
   height: 100%;
   overflow: hidden;
   color: whitesmoke;
-
 }
 
 #bio-1 {
@@ -272,8 +257,8 @@ a, a:visited {
 
 #bio-header span {
   animation: 2s ease-out 2s 1 backgroundFadeIn forwards;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   width: 100%;
   padding: 4% 3% 0 3%;
 }
@@ -296,8 +281,8 @@ a, a:visited {
 
 #bio-content span {
   animation: 2s ease-out 2s 1 backgroundFadeIn forwards;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   width: 100%;
   padding: 0% 3% 4% 3%;
 }
@@ -306,6 +291,7 @@ a, a:visited {
   height: 40%;
   padding: 0 20px;
   line-height: 1.3;
+  border-radius: 10px;
 }
 
 #bio-footer span {
@@ -321,13 +307,10 @@ a, a:visited {
 
 
 
+/*************************************************/
+/******************** Project ********************/
+/*************************************************/
 
-
-/*//////////////////////////////////////////////////*/
-/*//////////////////////////////////////////////////*/
-/*//////////////////// Projects ////////////////////*/
-/*//////////////////////////////////////////////////*/
-/*//////////////////////////////////////////////////*/
 
 #projects-container {
   display: flex;
@@ -458,8 +441,6 @@ a, a:visited {
   margin: 0 15% 0 0;
 }
 
-
-
 .project-mid {
   display: flex;
   justify-content: center;
@@ -525,14 +506,9 @@ img {
 
 
 
-
-
-/*/////////////////////////////////////////////////*/
-/*/////////////////////////////////////////////////*/
-/*//////////////////// Contact ////////////////////*/
-/*/////////////////////////////////////////////////*/
-/*/////////////////////////////////////////////////*/
-
+/*************************************************/
+/******************** Contact ********************/
+/*************************************************/
 
 
 #contact-container {
@@ -673,6 +649,77 @@ img {
 }
 
 
+
+
+/***************************************************/
+/******************** Resources ********************/
+/***************************************************/
+
+.R-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 85%;
+  color: white;
+}
+
+.R-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+}
+
+.R-header {
+  background-color: rgb(0, 0, 0, .8);
+  padding: 15px;
+  line-height: 1.4;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.R-2 {
+  background-color: rgb(0, 0, 0, .8);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  height: 80%;
+  border-radius: 10px;
+  padding: 2% 0 0 0;
+  overflow-y: auto;
+}
+
+.R-item {
+  display: flex;
+  /* justify-content: flex-start; */
+  /* align-items: center; */
+  padding: 2%;
+  width: 100%;
+  height: 10vh;
+}
+
+.R-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 40%;
+  font-size: 16px;
+  font-family: 'Rubik', sans-serif;
+}
+
+.R-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 60%;
+  font-size: 22px;
+}
 
 
 
