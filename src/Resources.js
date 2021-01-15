@@ -8,7 +8,7 @@ export default class Resources extends Component {
     const list = [
       {
         url: 'https://www.w3schools.com',
-        title: 'w3schools.com',
+        title: 'w3schools',
         desc: 'Quick Reference'
       },
       {
@@ -23,13 +23,18 @@ export default class Resources extends Component {
       },
       {
         url: 'https://www.onlineconversion.com/',
-        title: 'onlineconversion.com',
+        title: 'onlineconversion',
         desc: 'Unit Converter'
       },
       {
         url: 'https://fontawesome.com/icons?d=gallery',
-        title: 'fontawesome.com/gallery',
+        title: 'fontawesome',
         desc: 'Icons'
+      },
+      {
+        url: 'https://ianlunn.github.io/Hover/',
+        title: 'Hover.css',
+        desc: 'Hover Effects Library'
       }
     ]
 
