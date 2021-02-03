@@ -11,9 +11,9 @@ export default class ContactNav extends Component {
         <div className='nav-middle'>
           <Link to="/projects" className='nav-button nav-middle-button nav-projects nav-home-contact' aria-role="button">Projects</Link>
         </div>
-        <div className='nav-bottom'>
+        {/* <div className='nav-bottom'>
           <Link to="/resources" className='nav-button nav-bottom-button nav-resources nav-home-contact' aria-role="button">Resources</Link>
-        </div>
+        </div> */}
       </div>
     )
   }

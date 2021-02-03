@@ -145,18 +145,20 @@ a, a:visited {
 }
 
 .nav-top {
-  height: 33.3%;
+  /* height: 33.3%; */
+  height: 50%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
 }
 
 .nav-middle {
-  height: 33.3%;
+  height: 50%;
+  /* height: 33.3%; */
   display: flex;
   justify-content: flex-start;
-  align-items: center;
-  padding: 6vh 0 0 0;
+  align-items: flex-start;
+  /* padding: 6vh 0 0 0; */
 }
 
 .nav-bottom {
@@ -185,15 +187,16 @@ a, a:visited {
 }
 
 .nav-button {
+  border: .5px solid magenta;
   font-family: 'Source Sans Pro', sans-serif;
-  outline: 1px solid pink;
-  background-color: rgb(0, 0, 0, 0.2);
+  background-color: rgb(0, 0, 0, 0.6);
   font-size: calc(26px + (18) * ((100vw - 400px) / 1200));
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  transition: 0.7s;
+  transition: 0.3s;
+  border-radius: 10px;
   /* transform: scale(0); */
   /* animation: 2s ease-out 0s 1 popIn forwards; */
 }
@@ -211,12 +214,12 @@ a, a:visited {
 
 .nav-home-bio:hover,
 .nav-home-projects:hover {
-  background-color: rgb(0, 0, 0, .6);
+  background-color: rgb(0, 0, 0, .9);
 }
 
 .nav-home-contact,
 .nav-home-resources {
-  background-color: rgb(0, 0, 0, .6);
+  background-color: rgb(0, 0, 0, .9);
 }
 
 .nav-home-contact:hover,
@@ -291,13 +294,14 @@ a, a:visited {
   height: 40%;
   padding: 0 20px;
   line-height: 1.3;
-  border-radius: 10px;
 }
 
 #bio-footer span {
+  /* border: 1px solid white; */
   animation:
     2s ease-out 2s 1 backgroundFadeIn forwards,
     2s ease-out 2s 1 fadeIn forwards;
+  border-radius: 10px;
   opacity: 0;
   padding: 2% 3%;
   /* opacity: 0; */
@@ -322,7 +326,9 @@ a, a:visited {
 
 .project-tabs {
   height: 100%;
-  border: 1px solid whitesmoke;
+  /* border: 1px solid whitesmoke; */
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 #tab-labels {
@@ -333,19 +339,24 @@ a, a:visited {
   height: 8%;
 }
 
+/* .active {
+  background-color: black;
+  color: white;
+} */
+
 .tab-link {
   height: 100%;
   width: 20%;
   overflow: hidden;
   font-size: calc(11px + 6 * ((100vw - 400px) / 1200));
-  border-bottom: 1px solid whitesmoke;
-  border-right: 1px solid black;
+  /* border-bottom: 1px solid whitesmoke; */
+  /* border-right: 1px solid black; */
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: whitesmoke;
   color: black;
-  transition: 0.7s;
+  transition: 0.3s;
   line-height: 1.4;
   padding: 2px 5px;
 }
@@ -394,7 +405,7 @@ a, a:visited {
   width: 80%;
   font-size: calc(20px + 18 * ((100vw - 400px) / 1200));
   padding: 10px;
-  border-right: 1px solid whitesmoke;
+  /* border-right: 1px solid whitesmoke; */
 }
 
 .project-links {
@@ -468,7 +479,7 @@ a, a:visited {
   font-size: calc(10px + 6 * ((100vw - 400px) / 1200));
   line-height: 1.4;
   padding: 10px;
-  border-left: 1px solid whitesmoke;
+  /* border-left: 1px solid whitesmoke; */
 }
 
 /* .project-tech-header {
@@ -512,10 +523,14 @@ img {
 
 
 #contact-container {
+  /* border: 1px solid white; */
+  background-color: rgb(0, 0, 0, 0.6);
+  color: white;
   height: 95vh;
   display: flex;
   flex-direction: column;
-  margin: 0 0 60px 0;
+  border-radius: 10px;
+  /* margin: 0 0 3% 0; */
 }
 
 #contact-button-header-container {
@@ -534,7 +549,7 @@ img {
   /* border: 1px solid whitesmoke; */
   border: 1px solid transparent;
   padding: 20px 20px 10px 20px;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 /* #contact-header:hover {
@@ -553,17 +568,12 @@ img {
 }
 
 .icon {
-  transition: 0.8s;
+  transition: 0.3s;
   color: white;
 }
 
 .icon:hover {
   transform: scale(1.6);
-}
-
-.icon2 {
-  transition: 0.8s;
-  color: black;
 }
 
 .icon2:hover {
@@ -601,11 +611,18 @@ img {
 }
 
 #nameinput, #emailinput {
+  background-color: rgba(0, 0, 0, .6);
+  color: white;
   width: 85%;
   height: calc(30px + 10 * ((100vw - 400px) / 1200));
   margin: 0 0 15px 0;
   padding: 10px;
   font-size: calc(12px + 6 * ((100vw - 400px) / 1200));
+  border-radius: 8px;
+}
+
+#nameinput::placeholder, #emailinput::placeholder, #maininput::placeholder {
+  color: white;
 }
 
 #textarea {
@@ -615,10 +632,13 @@ img {
 }
 
 #maininput {
+  background-color: rgba(0, 0, 0, .6);
+  color: white;
   width: 100%;
   height: 100%;
   padding: 10px;
   font-size: calc(12px + 6 * ((100vw - 400px) / 1200));
+  border-radius: 8px;
 }
 
 #contactbutton {
@@ -631,17 +651,18 @@ img {
 }
 
 #submit {
-  background-color: whitesmoke;
-  color: black;
-  transition: 0.7s;
+  background-color: rgba(0, 0, 0, .6);
+  color: white;
+  transition: 0.3s;
   border: none;
   width: 100%;
   height: 100%;
+  border-radius: 8px;
 }
 
 #submit:hover {
-  background-color: black;
-  color: whitesmoke;
+  background-color: white;
+  color: black;
 }
 
 #submit:only-child {

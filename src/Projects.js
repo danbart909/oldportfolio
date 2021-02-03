@@ -12,10 +12,8 @@ export default class Projects extends Component {
 	render() {
 
     let activeStyle = {
-      'color': 'whitesmoke',
-      'background-color': 'black',
-      'border-left': '1px solid whitesmoke',
-      'border-right': '1px solid whitesmoke'
+      'color': 'white',
+      'background-color': 'black'
     }
 
 		return (

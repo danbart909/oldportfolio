@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import img from '../img/happywifepreview.jpg'
+import { VFXImg, VFXSpan } from 'react-vfx';
 
 export default class Happywife extends Component {
   render() {
@@ -42,6 +43,11 @@ export default class Happywife extends Component {
         <div id='project1-bot' className='project-bot'>
           <div id='project1-img' className='project-img'>
             <a href="http://happywifejunk.com" className='img-link' target="_blank">
+              {/* <VFXImg
+                src={img}
+                alt='Screenshot of Happy Wife Junk Service Homepage'
+                shader='pixelateTransition'
+              /> */}
               <img src={img} alt='Screenshot of Happy Wife Junk Service Homepage'/>
             </a>
           </div>

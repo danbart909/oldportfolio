@@ -11,9 +11,9 @@ export default class BioNav extends Component {
         <div className='nav-middle'>
 				  <Link to="/contact" className='nav-button nav-middle-button nav-contact nav-home-bio' aria-role="button">Contact</Link>
         </div>
-        <div className='nav-bottom'>
+        {/* <div className='nav-bottom'>
           <Link to="/resources" className='nav-button nav-bottom-button nav-resources nav-home-bio' aria-role="button">Resources</Link>
-        </div>
+        </div> */}
       </div>
     )
   }
