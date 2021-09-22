@@ -24,7 +24,7 @@ export default class TurtleRacing extends Component {
                   <i className="icon github-i fab fa-github" role="link" />
                 </a>
                 <a href="https://github.com/danbart909/turtle-racing" className='client-link' target="_blank">
-                  <span className="github-span-client">Client</span>
+                  <span className="github-span-client">Repo</span>
                 </a>
               </div>
             </div>
