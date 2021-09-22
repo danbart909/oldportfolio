@@ -12,7 +12,7 @@ html {
 
 ::placeholder {
   color: black;
-  font-size: calc(14px + 2 * ((100vw - 400px) / 1200));
+  font-size: calc(14px + 2 * ((100vw - 360px) / 940));
 }
 
 .hidden {
@@ -26,8 +26,8 @@ html {
 
 #overlord {
   display: flex;
-  font-size: calc(15px + 8 * ((100vw - 400px) / 1200));
-  min-width: 400px;
+  font-size: calc(15px + 8 * ((100vw - 360px) / 940));
+  min-width: 360px;
   min-height: 100vh;
   font-family: 'Varta', sans-serif;
   overflow: hidden;
@@ -190,7 +190,7 @@ a, a:visited {
   border: .5px solid magenta;
   font-family: 'Source Sans Pro', sans-serif;
   background-color: rgb(0, 0, 0, 0.6);
-  font-size: calc(26px + (18) * ((100vw - 400px) / 1200));
+  font-size: calc(18px + 24 * ((100vw - 360px) / 940));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -252,9 +252,11 @@ a, a:visited {
   overflow: hidden;
   animation: 2s ease-out 0s 1 slideInFromRight;
   height: 100%;
+  /* width: 90%; */
   display: flex;
+  /* justify-content: center; */
   align-items: flex-end;
-  font-size: calc(50px + 114 * ((100vw - 400px) / 1200));
+  font-size: calc(50px + 114 * ((100vw - 360px) / 940));
   padding: 0 20px;
 }
 
@@ -288,6 +290,7 @@ a, a:visited {
   border-bottom-right-radius: 10px;
   width: 100%;
   padding: 0% 3% 4% 3%;
+  font-size: calc(14px + 6 * ((100vw - 360px) / 940));
 }
 
 #bio-footer {
@@ -305,6 +308,7 @@ a, a:visited {
   opacity: 0;
   padding: 2% 3%;
   /* opacity: 0; */
+  font-size: calc(12px + 8 * ((100vw - 360px) / 940));
 }
 
 
@@ -318,10 +322,10 @@ a, a:visited {
 
 #projects-container {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   width: 90%;
-  height: 85%;
+  height: 95%;
 }
 
 .project-tabs {
@@ -346,9 +350,10 @@ a, a:visited {
 
 .tab-link {
   height: 100%;
-  width: 20%;
+  /* width: 20%; */
+  flex: 1;
   overflow: hidden;
-  font-size: calc(11px + 6 * ((100vw - 400px) / 1200));
+  font-size: calc(11px + 6 * ((100vw - 360px) / 940));
   /* border-bottom: 1px solid whitesmoke; */
   /* border-right: 1px solid black; */
   display: flex;
@@ -361,25 +366,35 @@ a, a:visited {
   padding: 2px 5px;
 }
 
+#tab-link2 {
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
 .tab-link:hover {
   color: whitesmoke;
   background-color: black;
+  /* border-left: 1px solid white; */
+  /* border-right: 1px solid white; */
 }
 
 #tab-content {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: center; */
   height: 92%;
+  border: 1px solid white;
 }
 
 .project {
   display: flex;
   flex-direction: column;
-  font-size: calc(14px + 6 * ((100vw - 400px) / 1200));
-  height: 78vh;
+  /* font-size: calc(14px + 6 * ((100vw - 360px) / 940)); */
+  /* height: 78vh; */
+  height: 100%;
   background-color: rgb(0, 0, 0, 0.6);
   color: whitesmoke;
+  border: 1px solid white;
 }
 
 .tophalf {
@@ -403,7 +418,7 @@ a, a:visited {
   justify-content: center;
   text-align: center;
   width: 80%;
-  font-size: calc(20px + 18 * ((100vw - 400px) / 1200));
+  font-size: calc(20px + 18 * ((100vw - 360px) / 940));
   padding: 10px;
   /* border-right: 1px solid whitesmoke; */
 }
@@ -415,7 +430,7 @@ a, a:visited {
   width: 20%;
   overflow: hidden;
   padding: 10px;
-  font-size: calc(10px + 4 * ((100vw - 400px) / 1200));
+  font-size: calc(10px + 4 * ((100vw - 360px) / 940));
   line-height: 1.5;
 }
 
@@ -467,6 +482,27 @@ a, a:visited {
   text-align: center;
   width: 80%;
   padding: 20px;
+  /* border: 1px solid white; */
+}
+
+.project-description span {
+  font-size: calc(13px + 7 * ((100vw - 360px) / 940));
+}
+
+.project-descriptionxX {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  height: 100%;
+  padding: 20px 10px;
+  /* border: 1px solid white; */
+}
+
+.project-descriptionxX span {
+  font-size: calc(11px + 5 * ((100vw - 360px) / 940));
 }
 
 .project-tech {
@@ -476,7 +512,7 @@ a, a:visited {
   text-align: center;
   width: 20%;
   overflow: hidden;
-  font-size: calc(10px + 6 * ((100vw - 400px) / 1200));
+  font-size: calc(10px + 6 * ((100vw - 360px) / 940));
   line-height: 1.4;
   padding: 10px;
   /* border-left: 1px solid whitesmoke; */
@@ -492,6 +528,14 @@ a, a:visited {
   justify-content: center;
   align-self: center;
   height: 50%;
+}
+
+.project-botxX {
+  display: flex;
+  justify-content: space-evenly;
+  align-self: center;
+  height: 50%;
+  width: 100%;
 }
 
 .project-img {
@@ -526,11 +570,13 @@ img {
   /* border: 1px solid white; */
   background-color: rgb(0, 0, 0, 0.6);
   color: white;
-  height: 95vh;
+  height: 95%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
   /* margin: 0 0 3% 0; */
+  /* border: 3px solid red; */
 }
 
 #contact-button-header-container {
@@ -586,11 +632,11 @@ img {
   justify-content: space-evenly;
 }
 
-/* #contact-form-container {
+#contact-form-container {
   display: flex;
   justify-content: center;
   align-items: center;
-} */
+}
 
 #contact-form {
   display: flex;
@@ -614,10 +660,10 @@ img {
   background-color: rgba(0, 0, 0, .6);
   color: white;
   width: 85%;
-  height: calc(30px + 10 * ((100vw - 400px) / 1200));
+  height: calc(30px + 10 * ((100vw - 360px) / 940));
   margin: 0 0 15px 0;
   padding: 10px;
-  font-size: calc(12px + 6 * ((100vw - 400px) / 1200));
+  font-size: calc(12px + 6 * ((100vw - 360px) / 940));
   border-radius: 8px;
 }
 
@@ -627,7 +673,8 @@ img {
 
 #textarea {
   width: 85%;
-  height: calc(160px + 120 * ((100vw - 400px) / 1200));
+  height: 150px;
+  /* height: calc(40px + 120 * ((100vw - 360px) / 940)); */
   margin: 0 0 0 0;
 }
 
@@ -637,7 +684,7 @@ img {
   width: 100%;
   height: 100%;
   padding: 10px;
-  font-size: calc(12px + 6 * ((100vw - 400px) / 1200));
+  font-size: calc(12px + 6 * ((100vw - 360px) / 940));
   border-radius: 8px;
 }
 
@@ -746,7 +793,26 @@ img {
 
 
 
+@media only screen and (max-width: 940px) {
+  
+  #bio-1 {
+    height: 35%;
+  /* border: 3px solid red; */
+  }
 
+  #bio-2 {
+    height: 65%;
+  }
+
+  #bio-content {
+    height: 80%;
+  }
+
+  .project-top {
+    margin: 20px 0 0 0;
+  }
+
+}
 
 
 
